@@ -9,6 +9,14 @@ kern0-boot
 
 ...
 
+
+kern0-quit
+----------
+
+> Ejecutar el comando info registers en el monitor de QEMU, e incluir el resultado en la entrega. (El mismo comando, info reg, existe también en GDB).
+
+...
+
 kern0-hlt
 ---------
 
