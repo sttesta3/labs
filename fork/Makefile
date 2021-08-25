@@ -11,7 +11,10 @@ xargs: xargs.o
 primes: primes.o
 pingpong: pingpong.o
 
+format: .clang-files .clang-format
+	xargs -r clang-format -i <$<
+
 clean:
 	rm -f $(PROGS) *.o core vgcore.*
 
-.PHONY: all clean
+.PHONY: all clean format
